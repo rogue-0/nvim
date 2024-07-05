@@ -92,6 +92,7 @@ return {
 				html = {
 					capabilities = capabilities,
 				},
+				tailwindcss = {},
 			}
 
 			require("mason").setup()
