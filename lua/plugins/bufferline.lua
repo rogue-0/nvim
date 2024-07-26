@@ -3,16 +3,16 @@ return {
 	version = "*",
 	dependencies = "nvim-tree/nvim-web-devicons",
 	config = function()
-		vim.keymap.set("n", "<Tab>", ":BufferLineCyclePrev<CR>")
-		vim.keymap.set("n", "<S-Tab>", ":BufferLineCycleNext<CR>")
+		vim.keymap.set("n", "<S-Tab>", ":BufferLineCyclePrev<CR>")
+		vim.keymap.set("n", "<Tab>", ":BufferLineCycleNext<CR>")
 
 		vim.keymap.set("n", "<A-<>", "<Cmd>BufferLineMovePrev<CR>")
 		vim.keymap.set("n", "<A->>", "<Cmd>BufferLineMoveNext<CR>")
 
-		vim.keymap.set("n", "<A-Z>", ":BufferLineCloseLeft<CR>")
-		vim.keymap.set("n", "<A-C>", ":BufferLineCloseRight<CR>")
-		vim.keymap.set("n", "<A-X>", ":BufferLineCloseOthers<CR>")
-		vim.keymap.set("n", "<A-x>", ":BufferLinePickClose<CR>")
+		vim.keymap.set("n", "<c-H>", ":BufferLineCloseLeft<CR>")
+		vim.keymap.set("n", "<c-L>", ":BufferLineCloseRight<CR>")
+		vim.keymap.set("n", "<c-O>", ":BufferLineCloseOthers<CR>")
+		vim.keymap.set("n", "<c-p>", ":BufferLinePickClose<CR>")
 
 		-- These commands will move the current buffer to the first or the last position in the bufferline
 		vim.keymap.set("n", "<A-f>", ":lua require'bufferline'.move_to(1)<CR>")
