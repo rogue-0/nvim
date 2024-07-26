@@ -12,18 +12,16 @@ return {
 				typescriptreact = { { "prettierd", "prettier" } },
 				vue = { { "prettierd", "prettier" } },
 			},
-			format_on_save = {
+			format_after_save = {
 				lsp_fallback = true,
-				async = false,
-				timeout_ms = 500,
+				async = true,
 			},
 		})
 
 		vim.keymap.set({ "n", "v" }, "<S-A-f>", function()
 			require("conform").format({
 				lsp_fallback = true,
-				async = false,
-				timeout_ms = 500,
+				async = true,
 			})
 		end)
 	end,
