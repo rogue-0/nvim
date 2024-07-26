@@ -93,6 +93,7 @@ return {
 					capabilities = capabilities,
 				},
 				tailwindcss = {},
+				rust_analyzer = {},
 			}
 
 			require("mason").setup()
