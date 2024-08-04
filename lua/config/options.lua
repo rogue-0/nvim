@@ -22,7 +22,6 @@ opt.timeoutlen = 300
 opt.number = true
 opt.relativenumber = true
 opt.foldmethod = "marker"
-opt.colorcolumn = "80"
 opt.splitright = true
 opt.splitbelow = true
 opt.ignorecase = true
