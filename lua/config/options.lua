@@ -20,6 +20,7 @@ opt.timeoutlen = 300
 -- Neovim UI
 
 opt.number = true
+opt.relativenumber = true
 opt.foldmethod = "marker"
 opt.colorcolumn = "80"
 opt.splitright = true
@@ -28,7 +29,7 @@ opt.ignorecase = true
 opt.smartcase = true
 opt.termguicolors = true
 opt.cursorline = true
-opt.scrolloff = 10
+opt.scrolloff = 30
 
 -- Tabs
 
