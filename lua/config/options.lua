@@ -29,6 +29,8 @@ opt.smartcase = true
 opt.termguicolors = true
 opt.cursorline = true
 opt.scrolloff = 30
+opt.hlsearch = false
+opt.incsearch = true
 
 -- Tabs
 
@@ -52,3 +54,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.highlight.on_yank()
 	end,
 })
+
+-- Windows
+
+g.undotree_DiffCommand = "FC"
